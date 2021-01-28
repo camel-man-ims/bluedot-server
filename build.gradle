@@ -1,0 +1,61 @@
+plugins {
+//    id 'org.springframework.boot' version '2.1.16.RELEASE'
+    id 'org.springframework.boot' version '2.3.4.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+}
+
+group = 'develop.bluedot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    compile('mysql:mysql-connector-java')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    //  로그인 인증 보안
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'io.jsonwebtoken:jjwt-api:0.10.7'
+
+    //  config annotation
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
+    //  mail
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    //  mail html파일 제작을 위해 선언
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+    runtime 'io.jsonwebtoken:jjwt-impl:0.10.7'
+    runtime 'io.jsonwebtoken:jjwt-jackson:0.10.7'
+
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+
+    compileOnly 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-devtools'
+
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-aws', version: '2.2.1.RELEASE'
+}
+
+test {
+    useJUnitPlatform()
+}
