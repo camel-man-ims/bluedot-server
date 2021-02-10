@@ -1,3 +1,2 @@
-![logo2](./image/logo2.png){: width="100" height="100"}
+logo <img src="./image/logo2.png" width="200" height="200">
 
-<img src="./image/logo2.png" width="300" height="300">
