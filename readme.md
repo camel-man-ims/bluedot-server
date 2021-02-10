@@ -8,6 +8,6 @@ ___
 
 # 📌 Database Schema
 
-<img src="./image/db1.png" width="500" height="500">
+<img src="./image/db1.png">
 
-<img src="./image/db2.png" width="500" height="500">
+<img src="./image/db2.png">
