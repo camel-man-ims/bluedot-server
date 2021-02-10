@@ -1,6 +1,6 @@
 # :package: 블루닷
 
-<img src="./image/logo2.png" width="50%" height="50%" alt="">
+<img src="./image/logo2.png" width="30%" height="30%" alt="">
 
 * 프로젝트 기간: 2020.08 ~ 2021.01
 
