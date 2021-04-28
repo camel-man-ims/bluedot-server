@@ -28,14 +28,14 @@ ___
 # 1. EC2
 
 > Ec2 ubntu version 20.04 사용.  <br/>
-원래는 18.04를 사용해봤었는데 20.04 버전이 더 빠르고 안정적이라고 생각이 된다.
+원래는 18.04를 사용해봤었는데 20.04 버전이 더 빠르고 안정적이라고 생각이 돼서 20.04 버전을 사용.
 
 > termius 세팅방법
 >>https://technote.kr/299
 
 # 2. RDS
 
-> 인바운드 규칙과 아웃바운드 규칙을 아래의 글에 나오는 EC2뿐 아니라 위치무관에 대해서도 허용을 해주어야 pc에서 접근이 가능하다 <br/>
+> (인바운드 규칙과 아웃바운드 규칙을 아래의 글에 나오는 EC2뿐 아니라 위치무관에 대해서도 허용을 해주어야 pc에서 접근이 가능하다)<br/>
 >>https://victorydntmd.tistory.com/337 <br/>
 
 > EC2에서 mysql
@@ -50,7 +50,7 @@ sudo mysql -u root -p # MySQL 접속 <br/>
 ![image](https://user-images.githubusercontent.com/51740388/96069818-eeaded00-0ed9-11eb-9266-7b4f0a134bea.png)
 
 > elastic transcode 사용을 위해 input, output, 그리고 image 파일들을 담을 버킷 총 3개를 생성
-생성할 때 객체는 모두 public으로 생성했다.
+생성할 때 객체는 모두 public으로 생성.
 
 # 4. Elastic Transcoder + 5. lambda
 
